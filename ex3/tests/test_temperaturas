@@ -1,0 +1,30 @@
+import pytest
+from temperaturas import maior, dia_do_maior
+
+def test_maior_varios():
+    assert maior([21, 25, 19, 30, 22]) == 30
+
+def test_maior_um_elemento():
+    assert maior([18]) == 18
+
+def test_maior_primeiro():
+    assert maior([30, 21]) == 30
+
+def test_maior_vazia():
+    with pytest.raises(ValueError):
+        maior([])
+
+# ========
+
+def test_dia_do_maior_varios():
+    assert dia_do_maior([21, 25, 19, 30, 22]) == 3
+
+def test_dia_do_maior_um_elemento():
+    assert dia_do_maior([18]) == 0
+
+def test_dia_do_maior_primeiro():
+    assert dia_do_maior([30, 21]) == 0
+
+def test_dia_do_maior_vazia():
+    with pytest.raises(ValueError):
+        dia_do_maior([])

@@ -1,0 +1,34 @@
+{
+    "tests_by_mangled_function_name": {
+        "classificacao.x_classificar_aluno": [
+            "tests/test_classificacao.py::test_reprovado",
+            "tests/test_classificacao.py::test_aprovado"
+        ]
+    },
+    "duration_by_test": {
+        "tests/test_classificacao.py::test_aprovado": 0.00019869100015057484,
+        "tests/test_classificacao.py::test_reprovado": 0.0001569629998812161
+    },
+    "stats_time": 0.33625789500000003,
+    "function_hashes": {
+        "classificacao.x_classificar_aluno": "109d8edd176a"
+    },
+    "function_dependencies": {},
+    "config_fingerprint": {
+        "test_execution": "2e38e77b22c3",
+        "test_selection": "2e38e77b22c3",
+        "timeout": "d3052321fdc3",
+        "type_check": "2e38e77b22c3"
+    },
+    "watched_file_hashes": {
+        "pyproject.toml": "f550ce639915",
+        "mutants/pyproject.toml": "f550ce639915",
+        "mutants/src/__pycache__/classificacao.cpython-314.pyc": "fb0d87c54d3b",
+        "mutants/src/classificacao.py.meta": "561e58285be7",
+        "mutants/src/classificacao.py.spans": "f1d498cb42e7",
+        "mutants/tests/__pycache__/test_classificacao.cpython-314-pytest-9.1.1.pyc": "b92fb74dcd47",
+        "src/__pycache__/classificacao.cpython-314.pyc": "fb0d87c54d3b",
+        "tests/__pycache__/test_classificacao.cpython-314-pytest-9.1.1.pyc": "b92fb74dcd47"
+    },
+    "git_commit": "dfbf435ee0eeef7e81fec42b484fd9a406293eba"
+}

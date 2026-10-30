@@ -1,0 +1,22 @@
+import pytest
+from parcelamento import parcela
+
+def test_parcelas_abaixo_do_minimo():
+    with pytest.raises(ValueError, match="parcelas invalidas"):
+        parcela(100, 0)
+
+def test_parcelas_acima_do_maximo():
+    with pytest.raises(ValueError, match="parcelas invalidas"):
+        parcela(100, 13)
+
+def test_uma_parcela_sem_juros():
+    assert parcela(100, 1) == 100.0
+
+def test_tres_parcelas_sem_juros_e_arredondamento():
+    assert parcela(100, 3) == 33.33
+
+def test_quatro_parcelas_com_juros():
+    assert parcela(100, 4) == 25.5
+
+def test_doze_parcelas_limite_superior():
+    assert parcela(100, 12) == 9.83
